@@ -1,76 +1,166 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GUIA DE PROGRAMAÇÃO</title>
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo"><span>GUIA DE PROGRAMAÇÃO</span></a>
-      <ul class="nav-links">
-        <li>
-          <a href="#equipe">Nossa Equipe</a>
-        </li>
 
-        <li>
-          <a href="#linguagens">Linguagens</a>
-        </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GUIA DE PROGRAMAÇÃO</title>
+</head>
 
-        <li>
-          <a href="#estudar">O que estudar</a>
-        </li>
+<body>
+  <header class="header">
+    <a href="#" class="logo"><span>GUIA DE PROGRAMAÇÃO</span></a>
+    <ul class="nav-links">
+      <li>
+        <a href="#equipe">Nossa Equipe</a>
+      </li>
 
-        <li>
-          <a href="#ferramentas">Ferramentas</a>
+      <li>
+        <a href="#linguagens">Linguagens</a>
+      </li>
+
+      <li>
+        <a href="#estudar">O que estudar</a>
+      </li>
+
+      <<<<<<< HEAD <li>
+        <a href="#ferramentas">Ferramentas</a>
         </li>
+        =======
+        <section class="equipe" id="equipe">
+          <h2>Nossa Equipe</h2>
+          <p>
+            Conheça os membros da nossa equipe e suas respectivas áreas de
+            responsabilidade.<br />
+            Ezequiel Ferreira Lindoso - Criação da Página e criação da seção footer
+            e equipe <br />
+            Cauã Affonso Mendonça Domingues da Silva - Criação das seções de
+            ferramentas e ferramentas <br />
+            Marcos Vinícius Souza Santana - Criação das seções linguagens e o que
+            estudar
+          </p>
+        </section>
+        >>>>>>> origin/main
 
         <li>
           <a href="#objetivo">Objetivo</a>
         </li>
-      </ul>
-    </header>
+    </ul>
+  </header>
 
-    <section class="equipe" id="equipe">
-      <h2>Nossa Equipe</h2>
+  <section class="estudar" id="estudar" style="min-height: 100vh">
+    <details>
+      <summary>
+        <h2 style="display: inline">O que estudar</h2>
+      </summary>
+
       <p>
-        Conheça os membros da nossa equipe e suas respectivas áreas de
-        responsabilidade.<br />
-        Ezequiel Ferreira Lindoso - Criação da Página e criação da seção footer
-        e equipe <br />
-        Cauã Affonso Mendonça Domingues da Silva - Criação das seções de
-        ferramentas e ferramentas <br />
-        Marcos Vinícius Souza Santana - Criação das seções linguagens e o que
-        estudar
+        Uma trilha sugerida para quem está começando em programação. Clique
+        em uma pergunta para ver a resposta.
       </p>
-    </section>
 
-    <footer>
-      <ul>
-        <li>
-          <a href="#equipe">Nossa Equipe</a>
-        </li>
+      <details>
+        <summary>1. Por onde começar a estudar programação?</summary>
+        <p>
+          Pela lógica de programação, que é a base de qualquer linguagem.
+          Estude:
+        </p>
+        <ul>
+          <li>Variáveis e tipos de dados</li>
+          <li>Operadores e expressões</li>
+          <li>Condicionais (if / else)</li>
+          <li>Laços de repetição (for / while)</li>
+        </ul>
+      </details>
 
-        <li>
-          <a href="#linguagens">Linguagens</a>
-        </li>
+      <details>
+        <summary>2. Como trabalhar em equipe e guardar o código?</summary>
+        <p>
+          Com Git e GitHub, que registram o histórico do projeto e permitem
+          que várias pessoas trabalhem juntas. Estude:
+        </p>
+        <ul>
+          <li>Repositório, commit e branch</li>
+          <li>Push e pull</li>
+          <li>Issues e Pull Requests</li>
+        </ul>
+      </details>
 
-        <li>
-          <a href="#estudar">O que estudar</a>
-        </li>
+      <details>
+        <summary>3. Como criar a estrutura e o visual de uma página?</summary>
+        <p>
+          Com HTML e CSS. O HTML monta o conteúdo e o CSS cuida da aparência.
+          Estude:
+        </p>
+        <ul>
+          <li>Tags, listas, links e formulários</li>
+          <li>Seletores, cores e fontes</li>
+          <li>Layout e responsividade</li>
+        </ul>
+      </details>
 
-        <li>
-          <a href="#ferramentas">Ferramentas</a>
-        </li>
+      <details>
+        <summary>4. Como deixar a página interativa?</summary>
+        <p>
+          Com JavaScript, a linguagem que roda no navegador. Estude:
+        </p>
+        <ul>
+          <li>Variáveis, funções e eventos</li>
+          <li>Manipulação do DOM</li>
+          <li>Arrays e objetos</li>
+        </ul>
+      </details>
 
-        <li>
-          <a href="#objetivo">Objetivo</a>
-        </li>
-      </ul>
-      <p class="copyright">
-        © All Rights Reserved | Ezequiel Ferreira Lindoso | Cauã Affonso
-        Mendonça Domingues da Silva | Marcos Vinícius Souza Santana
-      </p>
-    </footer>
-  </body>
+      <details>
+        <summary>5. Como guardar e consultar informações?</summary>
+        <p>
+          Com banco de dados. Estude:
+        </p>
+        <ul>
+          <li>Modelagem de dados</li>
+          <li>SQL (SELECT, INSERT, UPDATE, DELETE)</li>
+          <li>Relacionamentos entre tabelas</li>
+        </ul>
+      </details>
+    </details>
+  </section>
+  <section id="linguagens" style="min-height: 100vh">
+    <h2>Linguagens</h2>
+    <ul>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C#</li>
+    </ul>
+  </section>
+  
+  <footer>
+    <ul>
+      <li>
+        <a href="#equipe">Nossa Equipe</a>
+      </li>
+
+      <li>
+        <a href="#linguagens">Linguagens</a>
+      </li>
+
+      <li>
+        <a href="#estudar">O que estudar</a>
+      </li>
+
+      <li>
+        <a href="#ferramentas">Ferramentas</a>
+      </li>
+
+      <li>
+        <a href="#objetivo">Objetivo</a>
+      </li>
+    </ul>
+    <p class="copyright">
+      © All Rights Reserved | Ezequiel Ferreira Lindoso | Cauã Affonso
+      Mendonça Domingues da Silva | Marcos Vinícius Souza Santana
+    </p>
+  </footer>
+</body>
+
 </html>
