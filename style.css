@@ -1,43 +1,239 @@
-/* Seções Linguagens e O que estudar */
+/* Reset Básico e Fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #334155;
+  line-height: 1.6;
+}
+
+/* Header / Navegação */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #12355b;
+  letter-spacing: 0.5px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #475569;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* Estilo Geral das Seções */
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Títulos Globais das Seções */
+section h2 {
+  color: #12355b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color: #2563eb;
+  border-radius: 2px;
+  margin-top: 0.3rem;
+}
+
+/* Seção Equipe */
+.equipe {
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.equipe p {
+  color: #475569;
+  background-color: #f1f5f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #12355b;
+  margin-top: 1rem;
+}
+
+/* Seções Linguagens e O que estudar (Originais com ajustes de fluxo) */
 #linguagens,
 #estudar {
-  padding: 2rem;
   background-color: #f4f8fc;
+  border-radius: 8px;
+  margin-top: 2rem;
 }
 
-/* Títulos principais */
-#linguagens h2,
-#estudar h2 {
-  color: #12355b;
-  margin-bottom: 1rem;
-}
-
-/* Listas */
+/* Listas globais para seções */
 #linguagens ul,
-#estudar ul {
+#estudar ul,
+#ferramentas ul,
+#objetivo ul {
   list-style: none;
   padding: 0;
+  margin-top: 1rem;
 }
 
-/* Itens das listas */
+/* Itens das listas (Padrão Unificado) */
 #linguagens li,
-#estudar li {
+#estudar li,
+#ferramentas li,
+#objetivo li {
   background-color: #dbeafe;
   color: #12355b;
-  padding: 0.8rem;
-  margin-bottom: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.6rem;
   border-left: 4px solid #2563eb;
   border-radius: 6px;
 }
 
-/* Subtítulos da seção O que estudar */
+/* Subtítulos e Textos da seção O que estudar */
 #estudar h3 {
   color: #2563eb;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
 }
 
-/* Textos da seção O que estudar */
 #estudar p {
   color: #475569;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+/* Seção Ferramentas */
+#ferramentas {
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+#ferramentas p {
+  color: #475569;
+  margin-top: 0.5rem;
+}
+
+#ferramentas strong {
+  color: #12355b;
+}
+
+/* Seção Objetivos */
+#objetivo {
+  background-color: #f4f8fc;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+#objetivo p {
+  color: #475569;
+  margin-top: 0.8rem;
+}
+
+#objetivo strong {
+  color: #12355b;
+}
+
+/* Footer (Rodapé) */
+footer {
+  background-color: #12355b;
+  color: #f8fafc;
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+footer a {
+  color: #dbeafe;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer .copyright {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+  padding-top: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsividade Básica para Celulares */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
 }
