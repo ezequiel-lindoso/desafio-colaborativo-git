@@ -1,0 +1,43 @@
+/* Seções Linguagens e O que estudar */
+#linguagens,
+#estudar {
+  padding: 2rem;
+  background-color: #f4f8fc;
+}
+
+/* Títulos principais */
+#linguagens h2,
+#estudar h2 {
+  color: #12355b;
+  margin-bottom: 1rem;
+}
+
+/* Listas */
+#linguagens ul,
+#estudar ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Itens das listas */
+#linguagens li,
+#estudar li {
+  background-color: #dbeafe;
+  color: #12355b;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #2563eb;
+  border-radius: 6px;
+}
+
+/* Subtítulos da seção O que estudar */
+#estudar h3 {
+  color: #2563eb;
+  margin-top: 1.5rem;
+}
+
+/* Textos da seção O que estudar */
+#estudar p {
+  color: #475569;
+  margin-bottom: 0.5rem;
+}
